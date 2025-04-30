@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fabrica de pastas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="sitio.estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<p class="home-text"> HOME</p>
+		<a href="index.html"><img class="logo" src="logodepastas.png"> </a>
+		<a href="javascript:void(0);" class="icono" onclick="MiFuncion()">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+		<nav id="navegador" class="">
+		<ul>
+			<li><a href="productos.html"> Productos</a></li>
+		    <li><a href="sobre nosotros.html"> Sobre nosotros</a></li>
+			<li><a href="Contacto.html"> Contacto</a></li>
+			</ul>
+		</nav>
+    </header>
+<main> 
+	<div class="slider-contenedor">
+    <div class="slider">
+      <div class="slide">
+	  <a href="productos.html">
+	  <img  src="banner.png" class="img-slide1">
+		</a></div>
+		
+      <div class="slide">
+	  <a href="productos.html">
+	  <img src="noquis.jpg" class="img-slide2">
+		 </a> </div>
+		
+      <div class="slide">
+		  <a href="productos.html">
+		  <img src="rosa.jpg" class="img-slide3">
+		  </a></div>
+    </div>
+		<button class="boton-anterior"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+<button class="boton-siguiente"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    
+  </div>
+	
+ <div class="cajacontenedora">
+   <div class= "caja1">
+   <a  href="productos.html">
+   <img src="cintas.png" class="imgcaja">
+   </a>
+   <h2> Cintas</h2>
+   </div>
+	<div class="caja1">
+	<a  href="productos.html">
+	<img src="tallarines.jpg" class="imgcaja">
+	</a>
+	<h2> Tallarines</h2>
+	</div>
+	<div class="caja1">
+	<a  href="productos.html">
+	<img src="ravioles.png" class="imgcaja">
+	</a>
+	<h2> Ravioles</h2>
+	</div>
+</div>
+	</main>
+	<footer> 
+		<h2> Seguinos en:</h2>
+		<i class="fa fa-instagram" aria-hidden="true"></i>
+			<h2> Contactanos en:</h2>
+		<i class="fa fa-whatsapp" aria-hidden="true"></i>
+		<i class="fa fa-envelope-o" aria-hidden="true"></i>
+	</footer>
+	<script>
+function MiFuncion() {
+  var x = document.getElementById("navegador");
+  if (x.className === "") {
+    id="navegador"
+    x.className += "mostrarmenu";
+    } else {
+    x.className = "";
+    }
+ }
+</script> 
+	<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sliderContenedor = document.querySelector('.slider-contenedor');
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const botonAnterior = document.querySelector('.boton-anterior');
+    const botonSiguiente = document.querySelector('.boton-siguiente');
+ 
+    let indiceActual = 0;
+    const numSlides = slides.length;
+ 
+    function actualizarSlider() {
+      slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+      actualizarBotones();
+    }
+ 
+    function actualizarBotones() {
+      botonAnterior.disabled = indiceActual === 0;
+      botonSiguiente.disabled = indiceActual === numSlides - 1;
+    }
+ 
+    botonAnterior.addEventListener('click', function() {
+      if (indiceActual > 0) {
+        indiceActual--;
+        actualizarSlider();
+      }
+    });
+ 
+    botonSiguiente.addEventListener('click', function() {
+      if (indiceActual < numSlides - 1) {
+        indiceActual++;
+        actualizarSlider();
+      }
+    });
+ 
+    // Inicializar el slider
+    actualizarSlider();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sobre nosotros</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="sitio.estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<p class="home-text"> SOBRE NOSOTROS</p>
+		<a href="index.html"><img class="logo" src="logodepastas.png" > </a>
+		<a href="javascript:void(0);" class="icono" onclick="MiFuncion()">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+		<nav id="navegador" class="">
+		<ul>
+			<li><a href="productos.html"> Productos</a></li>
+		    <li><a href="sobre nosotros.html"> Sobre nosotros</a></li>
+			<li><a href="Contacto.html"> Contacto</a></li>
+			</ul>
+	</nav>
+		</header>
+	<main class="contenedora1">
+		<img class="banner2" src="nosotras.jpg">
+		<p> Somos dos hermanas que comenzamos con este proyecto hace poco ya que, en el 2020 descubrimos que la cocina es algo que nos apasiona y que nos gusta mucho cocinar. Hacemos todos los productos con mucho amor, cariño y dedicación. </p>
+	</main>
+<footer> 
+ <h2> Seguinos en:</h2>
+		<i class="fa fa-instagram" aria-hidden="true"></i>
+	<h2> Contactanos en:</h2>
+		<i class="fa fa-whatsapp" aria-hidden="true"></i>
+		<i class="fa fa-envelope-o" aria-hidden="true"></i>
+</footer>
+	<script>
+function MiFuncion() {
+  var x = document.getElementById("navegador");
+  if (x.className === "") {
+    id="navegador"
+    x.className += "mostrarmenu";
+    } else {
+    x.className = "";
+    }
+ }
+</script> 
+</body>
+</html>
