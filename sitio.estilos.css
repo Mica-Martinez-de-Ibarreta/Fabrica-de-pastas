@@ -6,13 +6,15 @@ nav ul a {  color:#742E05; text-decoration: none; display: inline-block; padding
 nav { text-align:center; align-items: center}
 .home-text {margin: 0; font-size: 30px; color: #742E05; position: absolute; left: 15%; top: 65px; font-weight: 400;align-items: center }
 .logo { width: 150px; align-content: left}
-.fa-instagram{width:40px}
-.fa-whatsapp{width: 40px}
-.fa-envelope-o{width: 40px}
+.fa-instagram{width:70px; margin-left: 10px}
+.fa-whatsapp{width: 80px; margin-left: 10px}
+.fa-envelope-o{width:70px;margin-left: 10px}
 
 .fa-instagram1{width:80px;}
 .fa-whatsapp1{width: 80px}
 .fa-envelope-o1{width:80px;}
+
+h1 {margin-left: 5px}
 .cajacontenedora {display: flex;justify-content: space-between; width: 100%; flex-flow: wrap; border:3px solid white;}
 .caja1 {width: 33.1%; background-color: #fff; border:3px solid white; box-sizing:border-box; display: flex;flex-direction: column;color:#742E05; font-size: 15px;}
 .caja2 {width: 25%; background-color: #fff; border:3px solid white; box-sizing:border-box; display: flex;flex-direction: column;color:#742E05; font-size: 15px;}
@@ -66,33 +68,13 @@ footer {background-color: white; font-size: 10px}
 .slide:nth-child(2) { background-color: #742E05;width: 100%; }
 .slide:nth-child(3) { background-color: #742E05;width: 100%; }
  
-.boton-anterior, .boton-siguiente {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 1em;
-  z-index: 10; /* Asegura que los botones estén por encima del slider */
-}
+.boton-anterior, .boton-siguiente {position: absolute;top: 50%;transform: translateY(-50%);background: rgba(0, 0, 0, 0.5);color: white;border: none;padding: 10px 15px;cursor: pointer;font-size: 1em;z-index: 10; }
 
-.boton-anterior {
-  left: 10px;
-}
+.boton-anterior {left: 10px;}
  
+.boton-siguiente {right: 10px;}
  
-.boton-siguiente {
-  right: 10px;
-}
- 
- 
-.boton-anterior:disabled, .boton-siguiente:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
+.boton-anterior:disabled, .boton-siguiente:disabled {opacity: 0.5;cursor: not-allowed;}
 @media(max-width:1024px){
 	/* cambio de tres columnas a dos*/ 
     .caja1, .caja2 { width: 50%;}
@@ -105,26 +87,22 @@ footer {background-color: white; font-size: 10px}
 @media(max-width:480px){
 	header {display:block;}
 	/* cambio de dos columnas a una*/ 
-    .caja1, .caja2 { width: 100%;}
-	
-	.banner2 {width: 100%; display: block;  box-sizing: border-box;}
-	.cajacontenedora {display: flex;justify-content: space-between; width: 100%; flex-flow: wrap; border:3px solid white;box-sizing: border-box;}
-	.contenedora1 {display: flex; flex-direction: column; align-items: center; width: 100%; margin: 0px; overflow-x: hidden; box-sizing: border-box;}
-	.contenedora1 p {color:#742E05; font-size:10px; max-width: 90%;text-align: justify;margin: 10px auto 20px auto;  box-sizing: border-box; }
-	.home-text {margin: 0; font-size: 30px; color: #742E05;  top: 80px; font-weight: 400;align-items: center; left: 38%; }
-	.slide-container {
-    overflow-x: scroll; /* Habilita el scroll horizontal */
-    scroll-snap-type: x mandatory; /* Activar scroll-snap para que deslice suavemente */
-    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos iOS */
-  }
-  .boton-anterior, .boton-siguiente {
-    display: none;
-  }
-    nav ul {display:block; text-align: center;margin: 0;padding: 0;}
+	nav ul {display:block; text-align: center;margin: 0;padding: 0;}
 	nav {display: none}
 	/* muestro el menu*/
 	.icono { display: block}
     .mostrarmenu { display:block}
+    .caja1, .caja2 { width: 100%;}
+	.banner2 {width: 100%; display: block;  box-sizing: border-box;}
+	.cajacontenedora {display: flex;justify-content: space-between; width: 100%; flex-flow: wrap; border:3px solid white;box-sizing: border-box;}
+	.contenedora1 {display: flex; flex-direction: column; align-items: center; width: 100%; margin: 0px; overflow-x: hidden; box-sizing: border-box;}
+	.contenedora1 p {color:#742E05; font-size:10px; max-width: 90%;text-align: justify;margin: 10px auto 20px auto;  box-sizing: border-box;}
+	.home-text {margin: 0; font-size: 30px; color: #742E05;  top: 80px; font-weight: 400;align-items: center; left: 38%; }
+	.slide-container {overflow-x: scroll; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+	.img-slide1 {max-width: 50%;height: 100%;display: block;margin: 0 auto; }
+    .img-slide2, .img-slide3 {max-width: 100%;height: 100%; display: block;margin: 0 auto; }
+    .boton-anterior, .boton-siguiente {display: none;}
+	p {font-size: 18px}
 }
 
  
