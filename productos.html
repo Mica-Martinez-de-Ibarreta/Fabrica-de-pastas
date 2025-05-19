@@ -22,76 +22,116 @@
 			<li><a href="productos.html"> Productos</a></li>
 		    <li><a href="sobre nosotros.html"> Sobre nosotros</a></li>
 			<li><a href="Contacto.html"> Contacto</a></li>
+		
+
 			</ul>
 		</nav>
 	</header>
 	<main>
-	<div class="cajacontenedora">
-	<div class= "caja2">
+	<div class="cajacontenedora1">
+	<div class= "producto">
 	<img src="cintas.png" class="imgcaja">
 	<h2> Cintas</h2>
 	<p class="precio"> $0</p>
-  
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
+	<div class="producto">
 	<img src="tallarines.jpg" class="imgcaja">
 	<h2> Tallarines</h2>
-	<p class="precio"> $0</p>	    
+	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>		      
-	<div class="caja2">
+	<div class="producto">
 	<img src="noquis.jpg" class="imgcaja">
 	<h2> Ñoquis</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
+	<div class="producto">
 	<img src="ravioles.png" class="imgcaja">
 	<h2> Ravioles</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
+	<div class="producto">
 	<img src="sorrentinos.jpg" class="imgcaja">
 	<h2> Sorrentinos</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
+	<div class="producto">
 	<img src="canelones.jpg" class="imgcaja">
 	<h2> Canelones</h2>	
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class= "caja2">
+	<div class= "producto">
 	<img src="lasana.jpg" class="imgcaja">
 	<h2> Lasaña</h2>
-	<p class="precio"> $0</p>    
+	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
-	<img src="tomate.jpg">
+	<div class="producto">
+	<img src="tomate.jpg"  class="imgcaja">
 	<h2> Salsa de tomate</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
-	<img src="rosa.jpg">
+	<div class="producto">
+	<img src="rosa.jpg" class="imgcaja">
 	<h2> Salsa rosa</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
-	<img src="bolonesa.jpg">
+	<div class="producto">
+	<img src="bolonesa.jpg" class="imgcaja">
 	<h2> Salsa boloñesa</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
-	<img src="pesto.jpg">
+	<div class="producto">
+	<img src="pesto.jpg" class="imgcaja">
 	<h2> Pesto</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
-	<img src="brocoli.jpg">
+	<div class="producto">
+	<img src="brocoli.jpg" class="imgcaja">
 	<h2> Salsa de brocoli</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
-	<div class="caja2">
-	<img src="champinones.jpg">
+	<div class="producto">
+	<img src="champinones.jpg" class="imgcaja">
 	<h2> Salsa de champiñones</h2>
 	<p class="precio"> $0</p>
+	<button class="cart-button" onclick="mostrarCarrito()">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button>
 	</div>	
 </div>
 	</main>		
@@ -102,8 +142,7 @@
 		<i class="fa fa-whatsapp" aria-hidden="true"></i>
 		<i class="fa fa-envelope-o" aria-hidden="true"></i>
 	</footer>
-	
-	<script>
+		<script>
 function MiFuncion() {
   var x = document.getElementById("navegador");
   if (x.className === "") {
@@ -113,6 +152,33 @@ function MiFuncion() {
     x.className = "";
     }
  }
-	</script>
+</script> 
+	<script>
+
+  let carrito = [];
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    alert(`${nombre} se agregó al carrito.`);
+    mostrarCarrito();
+  }
+  function mostrarCarrito() {
+    const listaCarrito = document.getElementById('lista-carrito');
+    const totalCarrito = document.getElementById('total-carrito');
+    listaCarrito.innerHTML = '';
+    let total = 0;
+    carrito.forEach((producto) => {
+      const li = document.createElement('li');
+      li.textContent = `${producto.nombre} - $${producto.precio}`;
+      listaCarrito.appendChild(li);
+      total += producto.precio;
+    });
+    totalCarrito.textContent = `Total: $${total}`;
+  }
+  function limpiarCarrito() {
+    carrito = [];
+    mostrarCarrito();
+  }
+
+</script>
 </body>
 </html>

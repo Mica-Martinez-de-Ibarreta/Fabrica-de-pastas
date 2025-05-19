@@ -22,16 +22,40 @@
 			<li><a href="productos.html"> Productos</a></li>
 		    <li><a href="sobre nosotros.html"> Sobre nosotros</a></li>
 			<li><a href="Contacto.html"> Contacto</a></li>
+			
 			</ul>
 	 	
 		</nav>
 	</header>
-	<main><h1> Seguinos en:</h1>
+	<main>
+	<form action="respuesta.html" method="post">
+    <label for="nombre">Nombre y Apellido:</label>
+    <input type="text"  placeholder="Nombre y Apellido" name="nombre" required>
+    <label for="email">Correo electrónico:</label>
+    <input type="email" placeholder="Email" name="email"  required>
+	<label for="tel">Télefono:</label>
+    <input type="tel" placeholder="Télefono" name="télefono" required>
+	<label for="comentario">Comentarios:</label>
+    <input type="textarea" placeholder="Comentarios" name="Comentarios" required>
+	<label for="pais">País:</label>
+	<select name="país" required>
+	<option>Argentina</option>
+	<option>Bolivia</option>
+	<option>Brasil</option>
+	<option>Chile</option>
+	<option>Paraguay</option>
+	<option>Uruguay</option>
+	</select>
+  <button type="submit">Enviar</button>
+  </form>
+	</main>
+	<footer>
+		<h1> Seguinos en:</h1>
 		<i class="fa fa-instagram" aria-hidden="true"></i>
 	<h1> Contactanos en:</h1>
 		<i class="fa fa-whatsapp" aria-hidden="true"></i>
 		<i class="fa fa-envelope-o" aria-hidden="true"></i>
-	</main>
+	</footer>
 	<script>
 function MiFuncion() {
   var x = document.getElementById("navegador");
