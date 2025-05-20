@@ -25,6 +25,7 @@ h1 {margin-left: 5px; color:#742E05 }
 .imgcaja {max-width:100%; border-radius: 20px}
 
 main {background-color: white; font-size: 30px;}
+main{min-height: 90vh}
 
 .contenedora2 {align-content:center; font-family: "arial"; font-size:15px; color:#742E05; display:flex; align-items:center; margin-left:30px; margin-right: 30px;margin-top:50px; gap: 40px; text-align: justify;flex-direction: column;border-radius: 20px}
 .banner2{width: 50%; display: flex; justify-content: center; margin: 0 auto; margin-top: 10px; margin-bottom: 10px;border-radius:20px}
