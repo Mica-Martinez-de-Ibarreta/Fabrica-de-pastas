@@ -59,7 +59,7 @@ form{font-family: arial; color:#742E05;max-width: 500px }
 label{margin-top: 40px;display:block; font-size: 20px; align-content: center; margin-left: 400px;width: 100%;border: #000000;}
 input,select {;margin-left: 400px;width: 100%;;height: 50px}
 .enviar{;margin-left: 400px;display: block;font-size: 20px;margin-top: 40px;width: 100%;border: #000000; background-color: #742E05; color:#F5C334; margin-bottom: 20px }
-
+iframe{ display: block; margin: 0 auto; margin-top: 30px; width: 728px; height: 90px}
 @media(max-width:1024px){
 	/* cambio de tres columnas a dos*/ 
     .caja, .producto { width: 50%;border-radius: 20px}
@@ -92,7 +92,7 @@ input,select {;margin-left: 400px;width: 100%;;height: 50px}
     label{margin-top: 40px;display:block; font-size: 20px; align-content: center; margin-left: 100px;width: 100%;border: #000000;}
     input,select {;margin-left: 100px;width: 100%;;height: 50px}
     .enviar{;margin-left: 100px;display: block;font-size: 20px;margin-top: 40px;width: 100%;border: #000000; background-color: #742E05; color:#F5C334; margin-bottom: 20px }
-	iframe{width: 300px;height: 600px}
+	iframe{width: 300px;height: 600px;margin-left: 65px; margin-top: 50px; margin-bottom: 30px;}
 }
 
  
